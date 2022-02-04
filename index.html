@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="them-color" content="red"><!--this will change the title bar color of mobile device-->
-    <title>Tanvir@RT</title>
-    <link rel="icon" href=""><!--this will add image to the titlebar-->
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"><!--this is for unicode-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--not so important-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--helps to make responsive web-->
+    <link rel="stylesheet" href="style.css"><!--main style sheet-->
+    <link rel="stylesheet" href="import.css"><!--imported items or links in css-->
+    <link rel="stylesheet" href="responsive.css"><!--this css will make this website responsive-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--this is for AOS(animation on scroll)-->
+    <link rel="icon" href="titleBarIcon.png">
+    <title>SuperUser</title>
 </head>
-<body>
-
-<!-- --my code-- -->
-<script src="main.js"></script>
+<body  id="bodySection">
+    <!-- navigation bar starting form here -->
+    <nav>
+        <div class="logo">
+            <h1><span>T</span>anvir</h1>
+        </div>
+        <div class="links">
+            <ul class="unorderList">
+                <li><a href="#" class="currentLink" onclick="showHero()"><img src="book.png" alt="book" class="currentLinkImage"> Home</a></li>
+                <li><a href="#" onclick="showHeroin()"><img src="html.png" alt="html">Html</a></li>
+                <li><a href="#"><img src="css.png" alt="css"> Css</a></li>
+                <li><a href="#"><img src="js.png" alt="js"> Js</a></li>
+            </ul>
+        </div>
+        <div class="theme">
+            <div class="dark" id="dark"></div>
+            <div class="light" id="light"></div>
+        </div>
+        <div class="menu">
+            <span></span>
+            <span class="centerSpan"></span>
+            <span></span>
+        </div>
+    </nav>
+   <!-- (^_^) -->
+   <div class="hero" id="heroSection">
+   </div>
+   <div class="heroin" id="heroinSection"></div>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--this is also for AOS-->
+<script>AOS.init({
+    offset: 400
+});</script><!--this is also for AOS(animation on scroll)-->
+<script src="main.js"></script><!--this is our own javaScript-->
 </html>
+
+
+<!--THIS PART IS FULLY COMPRESSED BY TANVIR MODHU PHONE:01306812870-->

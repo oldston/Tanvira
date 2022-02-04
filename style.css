@@ -1,4 +1,135 @@
-body{
+:root{
+     /*colors*/
+    --1: #222831; 
+    --2: #393e46; 
+    --3: #f96d00; 
+    --4: #f2f2f2; 
+    --5: #3f3f3f;
+    --6: #ffffff;
+    --7: #38598b;
+
+    /*fonts*/
+    --1ff:'Baloo Da 2', cursive; /*10Minute school fonts*/
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.11);
+}
+.logo{
+    margin-right: 20rem;
+}
+h1{
+    font-family: var(--1ff);
+    font-size: 2rem;
+    color: var(--2);
+}
+h1 span{
+    color: red;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--4);
+    border-radius: .5rem;
+}
+.links ul{
+    list-style: none;
+    display: flex;
+   
+    align-items: center;
+    justify-content: center;
+}
+.links ul li{
+    display: felx;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem;
+}
+.links ul li a{
+    color: var(--5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: var(--1ff);
+    padding: .2rem 1rem .2rem .2rem;
+    border-radius: .5rem;
+    transition: all ease .4s 0s;
+}
+
+.links ul li a:hover{
+    background-color: var(--7);
+    color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.075);
+}
+.links ul li a img{
+    height: 2rem;
+    width: 2rem;
+    margin-right:.5rem ; 
+    transition: opacity ease 2s 0s;
+}
+.links ul li a:hover img{
+}
+.theme{
+    height: 2rem;
+    width: 2rem;
+    /* background-color: var(--1); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.theme .dark{
+    height: 1rem;
+    width: 1rem;
+    background-color: var(--2);
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.theme .light{
+    height: 1rem;
+    width: 1rem;
+    background-color: var(--4);
+    border-radius: 50%;
+}
+.menu{
+    margin-left: 20rem;
+    height: 1rem;
+    width: 1rem;
+    /* background-color: var(--5); */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.menu span{
+    height: .16rem;
+    width: 1.3rem;
+    border-radius: .125rem;
+    background-color: var(--7);
+}
+.menu .centerSpan{
+    width: .8rem;
+}
+.hero{
+    background-color: var(--4);
     height: 100vh;
-    background-color: rgb(15, 0, 51);
+}
+.heroin{
+    background-color: var(--5);
+    height: 100vh;
 }
